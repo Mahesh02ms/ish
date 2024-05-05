@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"main","id":1}];
+var items = [{"id":1,"group":1,"content":"src\/test\/java\/frame\/Post[1:7]","start":1707587570319,"end":1707587571462,"title":"src\/test\/java\/frame\/Post[1:7] 23:22:50.319-23:22:51.462 request post methods"},{"id":2,"group":1,"content":"src\/test\/java\/frame\/Post[2:17]","start":1707587571468,"end":1707587571888,"title":"src\/test\/java\/frame\/Post[2:17] 23:22:51.468-23:22:51.888 DEMO 2"},{"id":3,"group":1,"content":"src\/test\/java\/frame\/Post[3:25]","start":1707587571892,"end":1707587572313,"title":"src\/test\/java\/frame\/Post[3:25] 23:22:51.892-23:22:52.313 DEMO 3"},{"id":4,"group":1,"content":"src\/test\/java\/frame\/Post[4:34]","start":1707587572318,"end":1707587572319,"title":"src\/test\/java\/frame\/Post[4:34] 23:22:52.318-23:22:52.319 DEMO 4","className":"failed"},{"id":5,"group":1,"content":"src\/test\/java\/frame\/Post[5:44]","start":1707587572326,"end":1707587572750,"title":"src\/test\/java\/frame\/Post[5:44] 23:22:52.326-23:22:52.750 DEMO 5"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

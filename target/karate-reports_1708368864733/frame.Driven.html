@@ -1,0 +1,1102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.identify("31484baf-b2a7-4dee-bf8f-51df658e6bab",{name:"pc"});
+    posthog.capture("report_feature",{karate_version:"1.4.0.RC3",karate_meta:null});
+  }
+});
+</script>
+
+    <title>frame.Driven</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">0</div>
+      <div id="nav-fail" class="bg-danger">3</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div></div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2024-02-20 12:23:23 am</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item failed">
+            <a href="#[1.1:14]"><span>[1.1:14]</span> <span>Test Driven test</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[1.2:15]"><span>[1.2:15]</span> <span>Test Driven test</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[1.3:16]"><span>[1.3:16]</span> <span>Test Driven test</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">frame/Driven.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">test data driven testing</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1.1:14]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1.1:14]</span>
+                <span class="scenario-name">Test Driven test</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>0</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1.1:14]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1.1:14]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell failed">
+        <span>Given</span>&nbsp;<span>url niha</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.4">00:23:23.150 the value is null 
+00:23:23.171 classpath:frame/Driven.feature:4
+Given url niha
+&gt;&gt; classpath:frame/Driven.feature:14
+&gt;&gt; karate-config.js failed
+&gt;&gt; ReferenceError: &quot;Karate&quot; is not defined
+js failed:
+&gt;&gt;&gt;&gt;
+01: function id(){
+02:  var Config = {
+03:  
+04: name:&#39;Mahesh&#39;,
+05: niha: &#39;https://reqres.in/api&#39;
+06: }
+07: 
+08: var env =karate.env
+09: 
+10: karate.log(&#39;the value is&#39;,env);
+11: if (env == &#39;qa&#39;){
+12: Config.niha = &#39;https://reqres.in/api/qa&#39;
+13: }
+14: else if (env ==&#39;dev&#39;){
+15: Config.niha = &#39;https://reqres.in/api/dev&#39;
+16: }
+17: Karate.configure(&#39;connectTimeout&#39;,5000);
+18: Karate.configure(&#39;readTimeout&#39;,5000);
+19: 
+20:  return Config;
+21:  }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;Karate&quot; is not defined
+- &lt;js&gt;.id(Unnamed:17)
+
+classpath:frame/Driven.feature:4
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.7">
+      <div class="step-ref failed">7</div>
+      
+      <div class="step-cell failed">
+        <span>And</span>&nbsp;<span>request {&quot;name&quot;:mahesh,&quot;job&quot;:mahe}</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.7">00:23:23.171 classpath:frame/Driven.feature:7
+And request {&quot;name&quot;:mahesh,&quot;job&quot;:mahe}
+&gt;&gt; classpath:frame/Driven.feature:14
+&gt;&gt; karate-config.js failed
+&gt;&gt; ReferenceError: &quot;Karate&quot; is not defined
+js failed:
+&gt;&gt;&gt;&gt;
+01: function id(){
+02:  var Config = {
+03:  
+04: name:&#39;Mahesh&#39;,
+05: niha: &#39;https://reqres.in/api&#39;
+06: }
+07: 
+08: var env =karate.env
+09: 
+10: karate.log(&#39;the value is&#39;,env);
+11: if (env == &#39;qa&#39;){
+12: Config.niha = &#39;https://reqres.in/api/qa&#39;
+13: }
+14: else if (env ==&#39;dev&#39;){
+15: Config.niha = &#39;https://reqres.in/api/dev&#39;
+16: }
+17: Karate.configure(&#39;connectTimeout&#39;,5000);
+18: Karate.configure(&#39;readTimeout&#39;,5000);
+19: 
+20:  return Config;
+21:  }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;Karate&quot; is not defined
+- &lt;js&gt;.id(Unnamed:17)
+
+classpath:frame/Driven.feature:4
+classpath:frame/Driven.feature:7
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.8">
+      <div class="step-ref failed">8</div>
+      
+      <div class="step-cell failed">
+        <span>When</span>&nbsp;<span>method Post</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.8">00:23:23.171 classpath:frame/Driven.feature:8
+When method Post
+&gt;&gt; classpath:frame/Driven.feature:14
+&gt;&gt; karate-config.js failed
+&gt;&gt; ReferenceError: &quot;Karate&quot; is not defined
+js failed:
+&gt;&gt;&gt;&gt;
+01: function id(){
+02:  var Config = {
+03:  
+04: name:&#39;Mahesh&#39;,
+05: niha: &#39;https://reqres.in/api&#39;
+06: }
+07: 
+08: var env =karate.env
+09: 
+10: karate.log(&#39;the value is&#39;,env);
+11: if (env == &#39;qa&#39;){
+12: Config.niha = &#39;https://reqres.in/api/qa&#39;
+13: }
+14: else if (env ==&#39;dev&#39;){
+15: Config.niha = &#39;https://reqres.in/api/dev&#39;
+16: }
+17: Karate.configure(&#39;connectTimeout&#39;,5000);
+18: Karate.configure(&#39;readTimeout&#39;,5000);
+19: 
+20:  return Config;
+21:  }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;Karate&quot; is not defined
+- &lt;js&gt;.id(Unnamed:17)
+
+classpath:frame/Driven.feature:4
+classpath:frame/Driven.feature:7
+classpath:frame/Driven.feature:8
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.9">
+      <div class="step-ref failed">9</div>
+      
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>status 201</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.9">00:23:23.172 classpath:frame/Driven.feature:9
+Then status 201
+&gt;&gt; classpath:frame/Driven.feature:14
+&gt;&gt; karate-config.js failed
+&gt;&gt; ReferenceError: &quot;Karate&quot; is not defined
+js failed:
+&gt;&gt;&gt;&gt;
+01: function id(){
+02:  var Config = {
+03:  
+04: name:&#39;Mahesh&#39;,
+05: niha: &#39;https://reqres.in/api&#39;
+06: }
+07: 
+08: var env =karate.env
+09: 
+10: karate.log(&#39;the value is&#39;,env);
+11: if (env == &#39;qa&#39;){
+12: Config.niha = &#39;https://reqres.in/api/qa&#39;
+13: }
+14: else if (env ==&#39;dev&#39;){
+15: Config.niha = &#39;https://reqres.in/api/dev&#39;
+16: }
+17: Karate.configure(&#39;connectTimeout&#39;,5000);
+18: Karate.configure(&#39;readTimeout&#39;,5000);
+19: 
+20:  return Config;
+21:  }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;Karate&quot; is not defined
+- &lt;js&gt;.id(Unnamed:17)
+
+classpath:frame/Driven.feature:4
+classpath:frame/Driven.feature:7
+classpath:frame/Driven.feature:8
+classpath:frame/Driven.feature:9
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.10">
+      <div class="step-ref failed">10</div>
+      
+      <div class="step-cell failed">
+        <span>And</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.10">00:23:23.172 classpath:frame/Driven.feature:10
+And print response
+&gt;&gt; classpath:frame/Driven.feature:14
+&gt;&gt; karate-config.js failed
+&gt;&gt; ReferenceError: &quot;Karate&quot; is not defined
+js failed:
+&gt;&gt;&gt;&gt;
+01: function id(){
+02:  var Config = {
+03:  
+04: name:&#39;Mahesh&#39;,
+05: niha: &#39;https://reqres.in/api&#39;
+06: }
+07: 
+08: var env =karate.env
+09: 
+10: karate.log(&#39;the value is&#39;,env);
+11: if (env == &#39;qa&#39;){
+12: Config.niha = &#39;https://reqres.in/api/qa&#39;
+13: }
+14: else if (env ==&#39;dev&#39;){
+15: Config.niha = &#39;https://reqres.in/api/dev&#39;
+16: }
+17: Karate.configure(&#39;connectTimeout&#39;,5000);
+18: Karate.configure(&#39;readTimeout&#39;,5000);
+19: 
+20:  return Config;
+21:  }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;Karate&quot; is not defined
+- &lt;js&gt;.id(Unnamed:17)
+
+classpath:frame/Driven.feature:4
+classpath:frame/Driven.feature:7
+classpath:frame/Driven.feature:8
+classpath:frame/Driven.feature:9
+classpath:frame/Driven.feature:10
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1.2:15]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1.2:15]</span>
+                <span class="scenario-name">Test Driven test</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>0</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1.2:15]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1.2:15]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell failed">
+        <span>Given</span>&nbsp;<span>url niha</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.4">00:23:23.199 the value is null 
+00:23:23.204 classpath:frame/Driven.feature:4
+Given url niha
+&gt;&gt; classpath:frame/Driven.feature:15
+&gt;&gt; karate-config.js failed
+&gt;&gt; ReferenceError: &quot;Karate&quot; is not defined
+js failed:
+&gt;&gt;&gt;&gt;
+01: function id(){
+02:  var Config = {
+03:  
+04: name:&#39;Mahesh&#39;,
+05: niha: &#39;https://reqres.in/api&#39;
+06: }
+07: 
+08: var env =karate.env
+09: 
+10: karate.log(&#39;the value is&#39;,env);
+11: if (env == &#39;qa&#39;){
+12: Config.niha = &#39;https://reqres.in/api/qa&#39;
+13: }
+14: else if (env ==&#39;dev&#39;){
+15: Config.niha = &#39;https://reqres.in/api/dev&#39;
+16: }
+17: Karate.configure(&#39;connectTimeout&#39;,5000);
+18: Karate.configure(&#39;readTimeout&#39;,5000);
+19: 
+20:  return Config;
+21:  }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;Karate&quot; is not defined
+- &lt;js&gt;.id(Unnamed:17)
+
+classpath:frame/Driven.feature:4
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.7">
+      <div class="step-ref failed">7</div>
+      
+      <div class="step-cell failed">
+        <span>And</span>&nbsp;<span>request {&quot;name&quot;:love,&quot;job&quot;:baby}</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.7">00:23:23.204 classpath:frame/Driven.feature:7
+And request {&quot;name&quot;:love,&quot;job&quot;:baby}
+&gt;&gt; classpath:frame/Driven.feature:15
+&gt;&gt; karate-config.js failed
+&gt;&gt; ReferenceError: &quot;Karate&quot; is not defined
+js failed:
+&gt;&gt;&gt;&gt;
+01: function id(){
+02:  var Config = {
+03:  
+04: name:&#39;Mahesh&#39;,
+05: niha: &#39;https://reqres.in/api&#39;
+06: }
+07: 
+08: var env =karate.env
+09: 
+10: karate.log(&#39;the value is&#39;,env);
+11: if (env == &#39;qa&#39;){
+12: Config.niha = &#39;https://reqres.in/api/qa&#39;
+13: }
+14: else if (env ==&#39;dev&#39;){
+15: Config.niha = &#39;https://reqres.in/api/dev&#39;
+16: }
+17: Karate.configure(&#39;connectTimeout&#39;,5000);
+18: Karate.configure(&#39;readTimeout&#39;,5000);
+19: 
+20:  return Config;
+21:  }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;Karate&quot; is not defined
+- &lt;js&gt;.id(Unnamed:17)
+
+classpath:frame/Driven.feature:4
+classpath:frame/Driven.feature:7
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.8">
+      <div class="step-ref failed">8</div>
+      
+      <div class="step-cell failed">
+        <span>When</span>&nbsp;<span>method Post</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.8">00:23:23.205 classpath:frame/Driven.feature:8
+When method Post
+&gt;&gt; classpath:frame/Driven.feature:15
+&gt;&gt; karate-config.js failed
+&gt;&gt; ReferenceError: &quot;Karate&quot; is not defined
+js failed:
+&gt;&gt;&gt;&gt;
+01: function id(){
+02:  var Config = {
+03:  
+04: name:&#39;Mahesh&#39;,
+05: niha: &#39;https://reqres.in/api&#39;
+06: }
+07: 
+08: var env =karate.env
+09: 
+10: karate.log(&#39;the value is&#39;,env);
+11: if (env == &#39;qa&#39;){
+12: Config.niha = &#39;https://reqres.in/api/qa&#39;
+13: }
+14: else if (env ==&#39;dev&#39;){
+15: Config.niha = &#39;https://reqres.in/api/dev&#39;
+16: }
+17: Karate.configure(&#39;connectTimeout&#39;,5000);
+18: Karate.configure(&#39;readTimeout&#39;,5000);
+19: 
+20:  return Config;
+21:  }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;Karate&quot; is not defined
+- &lt;js&gt;.id(Unnamed:17)
+
+classpath:frame/Driven.feature:4
+classpath:frame/Driven.feature:7
+classpath:frame/Driven.feature:8
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.9">
+      <div class="step-ref failed">9</div>
+      
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>status 201</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.9">00:23:23.205 classpath:frame/Driven.feature:9
+Then status 201
+&gt;&gt; classpath:frame/Driven.feature:15
+&gt;&gt; karate-config.js failed
+&gt;&gt; ReferenceError: &quot;Karate&quot; is not defined
+js failed:
+&gt;&gt;&gt;&gt;
+01: function id(){
+02:  var Config = {
+03:  
+04: name:&#39;Mahesh&#39;,
+05: niha: &#39;https://reqres.in/api&#39;
+06: }
+07: 
+08: var env =karate.env
+09: 
+10: karate.log(&#39;the value is&#39;,env);
+11: if (env == &#39;qa&#39;){
+12: Config.niha = &#39;https://reqres.in/api/qa&#39;
+13: }
+14: else if (env ==&#39;dev&#39;){
+15: Config.niha = &#39;https://reqres.in/api/dev&#39;
+16: }
+17: Karate.configure(&#39;connectTimeout&#39;,5000);
+18: Karate.configure(&#39;readTimeout&#39;,5000);
+19: 
+20:  return Config;
+21:  }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;Karate&quot; is not defined
+- &lt;js&gt;.id(Unnamed:17)
+
+classpath:frame/Driven.feature:4
+classpath:frame/Driven.feature:7
+classpath:frame/Driven.feature:8
+classpath:frame/Driven.feature:9
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.10">
+      <div class="step-ref failed">10</div>
+      
+      <div class="step-cell failed">
+        <span>And</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.10">00:23:23.205 classpath:frame/Driven.feature:10
+And print response
+&gt;&gt; classpath:frame/Driven.feature:15
+&gt;&gt; karate-config.js failed
+&gt;&gt; ReferenceError: &quot;Karate&quot; is not defined
+js failed:
+&gt;&gt;&gt;&gt;
+01: function id(){
+02:  var Config = {
+03:  
+04: name:&#39;Mahesh&#39;,
+05: niha: &#39;https://reqres.in/api&#39;
+06: }
+07: 
+08: var env =karate.env
+09: 
+10: karate.log(&#39;the value is&#39;,env);
+11: if (env == &#39;qa&#39;){
+12: Config.niha = &#39;https://reqres.in/api/qa&#39;
+13: }
+14: else if (env ==&#39;dev&#39;){
+15: Config.niha = &#39;https://reqres.in/api/dev&#39;
+16: }
+17: Karate.configure(&#39;connectTimeout&#39;,5000);
+18: Karate.configure(&#39;readTimeout&#39;,5000);
+19: 
+20:  return Config;
+21:  }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;Karate&quot; is not defined
+- &lt;js&gt;.id(Unnamed:17)
+
+classpath:frame/Driven.feature:4
+classpath:frame/Driven.feature:7
+classpath:frame/Driven.feature:8
+classpath:frame/Driven.feature:9
+classpath:frame/Driven.feature:10
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1.3:16]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1.3:16]</span>
+                <span class="scenario-name">Test Driven test</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>0</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1.3:16]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1.3:16]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell failed">
+        <span>Given</span>&nbsp;<span>url niha</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="3.4">00:23:23.229 the value is null 
+00:23:23.232 classpath:frame/Driven.feature:4
+Given url niha
+&gt;&gt; classpath:frame/Driven.feature:16
+&gt;&gt; karate-config.js failed
+&gt;&gt; ReferenceError: &quot;Karate&quot; is not defined
+js failed:
+&gt;&gt;&gt;&gt;
+01: function id(){
+02:  var Config = {
+03:  
+04: name:&#39;Mahesh&#39;,
+05: niha: &#39;https://reqres.in/api&#39;
+06: }
+07: 
+08: var env =karate.env
+09: 
+10: karate.log(&#39;the value is&#39;,env);
+11: if (env == &#39;qa&#39;){
+12: Config.niha = &#39;https://reqres.in/api/qa&#39;
+13: }
+14: else if (env ==&#39;dev&#39;){
+15: Config.niha = &#39;https://reqres.in/api/dev&#39;
+16: }
+17: Karate.configure(&#39;connectTimeout&#39;,5000);
+18: Karate.configure(&#39;readTimeout&#39;,5000);
+19: 
+20:  return Config;
+21:  }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;Karate&quot; is not defined
+- &lt;js&gt;.id(Unnamed:17)
+
+classpath:frame/Driven.feature:4
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.7">
+      <div class="step-ref failed">7</div>
+      
+      <div class="step-cell failed">
+        <span>And</span>&nbsp;<span>request {&quot;name&quot;:NISHA,&quot;job&quot;:automation}</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="3.7">00:23:23.233 classpath:frame/Driven.feature:7
+And request {&quot;name&quot;:NISHA,&quot;job&quot;:automation}
+&gt;&gt; classpath:frame/Driven.feature:16
+&gt;&gt; karate-config.js failed
+&gt;&gt; ReferenceError: &quot;Karate&quot; is not defined
+js failed:
+&gt;&gt;&gt;&gt;
+01: function id(){
+02:  var Config = {
+03:  
+04: name:&#39;Mahesh&#39;,
+05: niha: &#39;https://reqres.in/api&#39;
+06: }
+07: 
+08: var env =karate.env
+09: 
+10: karate.log(&#39;the value is&#39;,env);
+11: if (env == &#39;qa&#39;){
+12: Config.niha = &#39;https://reqres.in/api/qa&#39;
+13: }
+14: else if (env ==&#39;dev&#39;){
+15: Config.niha = &#39;https://reqres.in/api/dev&#39;
+16: }
+17: Karate.configure(&#39;connectTimeout&#39;,5000);
+18: Karate.configure(&#39;readTimeout&#39;,5000);
+19: 
+20:  return Config;
+21:  }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;Karate&quot; is not defined
+- &lt;js&gt;.id(Unnamed:17)
+
+classpath:frame/Driven.feature:4
+classpath:frame/Driven.feature:7
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.8">
+      <div class="step-ref failed">8</div>
+      
+      <div class="step-cell failed">
+        <span>When</span>&nbsp;<span>method Post</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="3.8">00:23:23.233 classpath:frame/Driven.feature:8
+When method Post
+&gt;&gt; classpath:frame/Driven.feature:16
+&gt;&gt; karate-config.js failed
+&gt;&gt; ReferenceError: &quot;Karate&quot; is not defined
+js failed:
+&gt;&gt;&gt;&gt;
+01: function id(){
+02:  var Config = {
+03:  
+04: name:&#39;Mahesh&#39;,
+05: niha: &#39;https://reqres.in/api&#39;
+06: }
+07: 
+08: var env =karate.env
+09: 
+10: karate.log(&#39;the value is&#39;,env);
+11: if (env == &#39;qa&#39;){
+12: Config.niha = &#39;https://reqres.in/api/qa&#39;
+13: }
+14: else if (env ==&#39;dev&#39;){
+15: Config.niha = &#39;https://reqres.in/api/dev&#39;
+16: }
+17: Karate.configure(&#39;connectTimeout&#39;,5000);
+18: Karate.configure(&#39;readTimeout&#39;,5000);
+19: 
+20:  return Config;
+21:  }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;Karate&quot; is not defined
+- &lt;js&gt;.id(Unnamed:17)
+
+classpath:frame/Driven.feature:4
+classpath:frame/Driven.feature:7
+classpath:frame/Driven.feature:8
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.9">
+      <div class="step-ref failed">9</div>
+      
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>status 201</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="3.9">00:23:23.233 classpath:frame/Driven.feature:9
+Then status 201
+&gt;&gt; classpath:frame/Driven.feature:16
+&gt;&gt; karate-config.js failed
+&gt;&gt; ReferenceError: &quot;Karate&quot; is not defined
+js failed:
+&gt;&gt;&gt;&gt;
+01: function id(){
+02:  var Config = {
+03:  
+04: name:&#39;Mahesh&#39;,
+05: niha: &#39;https://reqres.in/api&#39;
+06: }
+07: 
+08: var env =karate.env
+09: 
+10: karate.log(&#39;the value is&#39;,env);
+11: if (env == &#39;qa&#39;){
+12: Config.niha = &#39;https://reqres.in/api/qa&#39;
+13: }
+14: else if (env ==&#39;dev&#39;){
+15: Config.niha = &#39;https://reqres.in/api/dev&#39;
+16: }
+17: Karate.configure(&#39;connectTimeout&#39;,5000);
+18: Karate.configure(&#39;readTimeout&#39;,5000);
+19: 
+20:  return Config;
+21:  }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;Karate&quot; is not defined
+- &lt;js&gt;.id(Unnamed:17)
+
+classpath:frame/Driven.feature:4
+classpath:frame/Driven.feature:7
+classpath:frame/Driven.feature:8
+classpath:frame/Driven.feature:9
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.10">
+      <div class="step-ref failed">10</div>
+      
+      <div class="step-cell failed">
+        <span>And</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="3.10">00:23:23.233 classpath:frame/Driven.feature:10
+And print response
+&gt;&gt; classpath:frame/Driven.feature:16
+&gt;&gt; karate-config.js failed
+&gt;&gt; ReferenceError: &quot;Karate&quot; is not defined
+js failed:
+&gt;&gt;&gt;&gt;
+01: function id(){
+02:  var Config = {
+03:  
+04: name:&#39;Mahesh&#39;,
+05: niha: &#39;https://reqres.in/api&#39;
+06: }
+07: 
+08: var env =karate.env
+09: 
+10: karate.log(&#39;the value is&#39;,env);
+11: if (env == &#39;qa&#39;){
+12: Config.niha = &#39;https://reqres.in/api/qa&#39;
+13: }
+14: else if (env ==&#39;dev&#39;){
+15: Config.niha = &#39;https://reqres.in/api/dev&#39;
+16: }
+17: Karate.configure(&#39;connectTimeout&#39;,5000);
+18: Karate.configure(&#39;readTimeout&#39;,5000);
+19: 
+20:  return Config;
+21:  }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;Karate&quot; is not defined
+- &lt;js&gt;.id(Unnamed:17)
+
+classpath:frame/Driven.feature:4
+classpath:frame/Driven.feature:7
+classpath:frame/Driven.feature:8
+classpath:frame/Driven.feature:9
+classpath:frame/Driven.feature:10
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

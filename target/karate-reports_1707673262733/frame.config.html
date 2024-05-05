@@ -1,0 +1,1179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.identify("31484baf-b2a7-4dee-bf8f-51df658e6bab",{name:"pc"});
+    posthog.capture("report_feature",{karate_version:"1.4.0.RC3",karate_meta:null});
+  }
+});
+</script>
+
+    <title>frame.config</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">0</div>
+      <div id="nav-fail" class="bg-danger">1</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div></div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2024-02-11 11:08:36 pm</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item failed">
+            <a href="#[1:3]"><span>[1:3]</span> <span>Test config</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">frame/config.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Config</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:3]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:3]</span>
+                <span class="scenario-name">Test config</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>0</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref failed">4</div>
+      
+      <div class="step-cell failed">
+        <span>Given</span>&nbsp;<span>url &#39;ish&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">23:08:36.206 classpath:frame/config.feature:4
+Given url &#39;ish&#39;
+&gt;&gt; classpath:frame/config.feature:3
+&gt;&gt; karate-config.js failed
+&gt;&gt; js failed:
+&gt;&gt;&gt;&gt;
+01: (function id(){
+02: 
+03: var Config = {
+04: 
+05:  name:&#39;love&#39;
+06:  ish : &#39;https://reqres.in/api/users&#39;
+07: }
+08: var env=karate.env
+09: karate.log(&#39;The value is&#39;.env)
+10: if(env==qa) {
+11: Config ish :&#39;https://reqres.in/api/users&#39;
+12: }
+13: else(env==dev)
+14: {
+15: Config ish :&#39;https://reqres.in/api/users&#39;
+16: }
+17: 
+18: 
+19:  return config;
+20:  })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:6:1 Expected comma but found ident
+ ish : &#39;https://reqres.in/api/users&#39;
+ ^
+Unnamed:8:0 Expected ) but found var
+var env=karate.env
+^
+Unnamed:11:7 Expected ; but found ish
+Config ish :&#39;https://reqres.in/api/users&#39;
+       ^
+Unnamed:12:0 Expected eof but found }
+}
+^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:139)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:135)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1196)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:372)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:391)
+
+js failed:
+&gt;&gt;&gt;&gt;
+01: function id(){
+02: 
+03: var Config = {
+04: 
+05:  name:&#39;love&#39;
+06:  ish : &#39;https://reqres.in/api/users&#39;
+07: }
+08: var env=karate.env
+09: karate.log(&#39;The value is&#39;.env)
+10: if(env==qa) {
+11: Config ish :&#39;https://reqres.in/api/users&#39;
+12: }
+13: else(env==dev)
+14: {
+15: Config ish :&#39;https://reqres.in/api/users&#39;
+16: }
+17: 
+18: 
+19:  return config;
+20:  }
+&lt;&lt;&lt;&lt;
+com.intuit.karate.KarateException: js failed:
+&gt;&gt;&gt;&gt;
+01: (function id(){
+02: 
+03: var Config = {
+04: 
+05:  name:&#39;love&#39;
+06:  ish : &#39;https://reqres.in/api/users&#39;
+07: }
+08: var env=karate.env
+09: karate.log(&#39;The value is&#39;.env)
+10: if(env==qa) {
+11: Config ish :&#39;https://reqres.in/api/users&#39;
+12: }
+13: else(env==dev)
+14: {
+15: Config ish :&#39;https://reqres.in/api/users&#39;
+16: }
+17: 
+18: 
+19:  return config;
+20:  })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:6:1 Expected comma but found ident
+ ish : &#39;https://reqres.in/api/users&#39;
+ ^
+Unnamed:8:0 Expected ) but found var
+var env=karate.env
+^
+Unnamed:11:7 Expected ; but found ish
+Config ish :&#39;https://reqres.in/api/users&#39;
+       ^
+Unnamed:12:0 Expected eof but found }
+}
+^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:139)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:135)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1196)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:372)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:391)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:224)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1198)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:372)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:391)
+- com.intuit.karate.junit5.FeatureNode.lambda$next$1(FeatureNode.java:71)
+- org.junit.jupiter.engine.descriptor.DynamicTestTestDescriptor.lambda$execute$0(DynamicTestTestDescriptor.java:53)
+
+classpath:frame/config.feature:4
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref failed">5</div>
+      
+      <div class="step-cell failed">
+        <span>And</span>&nbsp;<span>request { &quot;name&quot;: &quot;morpheus&quot;,&quot;job&quot;: &quot;leader&quot; }</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.5">23:08:36.206 classpath:frame/config.feature:5
+And request { &quot;name&quot;: &quot;morpheus&quot;,&quot;job&quot;: &quot;leader&quot; }
+&gt;&gt; classpath:frame/config.feature:3
+&gt;&gt; karate-config.js failed
+&gt;&gt; js failed:
+&gt;&gt;&gt;&gt;
+01: (function id(){
+02: 
+03: var Config = {
+04: 
+05:  name:&#39;love&#39;
+06:  ish : &#39;https://reqres.in/api/users&#39;
+07: }
+08: var env=karate.env
+09: karate.log(&#39;The value is&#39;.env)
+10: if(env==qa) {
+11: Config ish :&#39;https://reqres.in/api/users&#39;
+12: }
+13: else(env==dev)
+14: {
+15: Config ish :&#39;https://reqres.in/api/users&#39;
+16: }
+17: 
+18: 
+19:  return config;
+20:  })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:6:1 Expected comma but found ident
+ ish : &#39;https://reqres.in/api/users&#39;
+ ^
+Unnamed:8:0 Expected ) but found var
+var env=karate.env
+^
+Unnamed:11:7 Expected ; but found ish
+Config ish :&#39;https://reqres.in/api/users&#39;
+       ^
+Unnamed:12:0 Expected eof but found }
+}
+^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:139)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:135)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1196)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:372)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:391)
+
+js failed:
+&gt;&gt;&gt;&gt;
+01: function id(){
+02: 
+03: var Config = {
+04: 
+05:  name:&#39;love&#39;
+06:  ish : &#39;https://reqres.in/api/users&#39;
+07: }
+08: var env=karate.env
+09: karate.log(&#39;The value is&#39;.env)
+10: if(env==qa) {
+11: Config ish :&#39;https://reqres.in/api/users&#39;
+12: }
+13: else(env==dev)
+14: {
+15: Config ish :&#39;https://reqres.in/api/users&#39;
+16: }
+17: 
+18: 
+19:  return config;
+20:  }
+&lt;&lt;&lt;&lt;
+com.intuit.karate.KarateException: js failed:
+&gt;&gt;&gt;&gt;
+01: (function id(){
+02: 
+03: var Config = {
+04: 
+05:  name:&#39;love&#39;
+06:  ish : &#39;https://reqres.in/api/users&#39;
+07: }
+08: var env=karate.env
+09: karate.log(&#39;The value is&#39;.env)
+10: if(env==qa) {
+11: Config ish :&#39;https://reqres.in/api/users&#39;
+12: }
+13: else(env==dev)
+14: {
+15: Config ish :&#39;https://reqres.in/api/users&#39;
+16: }
+17: 
+18: 
+19:  return config;
+20:  })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:6:1 Expected comma but found ident
+ ish : &#39;https://reqres.in/api/users&#39;
+ ^
+Unnamed:8:0 Expected ) but found var
+var env=karate.env
+^
+Unnamed:11:7 Expected ; but found ish
+Config ish :&#39;https://reqres.in/api/users&#39;
+       ^
+Unnamed:12:0 Expected eof but found }
+}
+^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:139)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:135)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1196)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:372)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:391)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:224)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1198)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:372)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:391)
+- com.intuit.karate.junit5.FeatureNode.lambda$next$1(FeatureNode.java:71)
+- org.junit.jupiter.engine.descriptor.DynamicTestTestDescriptor.lambda$execute$0(DynamicTestTestDescriptor.java:53)
+
+classpath:frame/config.feature:4
+classpath:frame/config.feature:5
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref failed">6</div>
+      
+      <div class="step-cell failed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.6">23:08:36.207 classpath:frame/config.feature:6
+When method POST
+&gt;&gt; classpath:frame/config.feature:3
+&gt;&gt; karate-config.js failed
+&gt;&gt; js failed:
+&gt;&gt;&gt;&gt;
+01: (function id(){
+02: 
+03: var Config = {
+04: 
+05:  name:&#39;love&#39;
+06:  ish : &#39;https://reqres.in/api/users&#39;
+07: }
+08: var env=karate.env
+09: karate.log(&#39;The value is&#39;.env)
+10: if(env==qa) {
+11: Config ish :&#39;https://reqres.in/api/users&#39;
+12: }
+13: else(env==dev)
+14: {
+15: Config ish :&#39;https://reqres.in/api/users&#39;
+16: }
+17: 
+18: 
+19:  return config;
+20:  })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:6:1 Expected comma but found ident
+ ish : &#39;https://reqres.in/api/users&#39;
+ ^
+Unnamed:8:0 Expected ) but found var
+var env=karate.env
+^
+Unnamed:11:7 Expected ; but found ish
+Config ish :&#39;https://reqres.in/api/users&#39;
+       ^
+Unnamed:12:0 Expected eof but found }
+}
+^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:139)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:135)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1196)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:372)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:391)
+
+js failed:
+&gt;&gt;&gt;&gt;
+01: function id(){
+02: 
+03: var Config = {
+04: 
+05:  name:&#39;love&#39;
+06:  ish : &#39;https://reqres.in/api/users&#39;
+07: }
+08: var env=karate.env
+09: karate.log(&#39;The value is&#39;.env)
+10: if(env==qa) {
+11: Config ish :&#39;https://reqres.in/api/users&#39;
+12: }
+13: else(env==dev)
+14: {
+15: Config ish :&#39;https://reqres.in/api/users&#39;
+16: }
+17: 
+18: 
+19:  return config;
+20:  }
+&lt;&lt;&lt;&lt;
+com.intuit.karate.KarateException: js failed:
+&gt;&gt;&gt;&gt;
+01: (function id(){
+02: 
+03: var Config = {
+04: 
+05:  name:&#39;love&#39;
+06:  ish : &#39;https://reqres.in/api/users&#39;
+07: }
+08: var env=karate.env
+09: karate.log(&#39;The value is&#39;.env)
+10: if(env==qa) {
+11: Config ish :&#39;https://reqres.in/api/users&#39;
+12: }
+13: else(env==dev)
+14: {
+15: Config ish :&#39;https://reqres.in/api/users&#39;
+16: }
+17: 
+18: 
+19:  return config;
+20:  })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:6:1 Expected comma but found ident
+ ish : &#39;https://reqres.in/api/users&#39;
+ ^
+Unnamed:8:0 Expected ) but found var
+var env=karate.env
+^
+Unnamed:11:7 Expected ; but found ish
+Config ish :&#39;https://reqres.in/api/users&#39;
+       ^
+Unnamed:12:0 Expected eof but found }
+}
+^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:139)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:135)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1196)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:372)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:391)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:224)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1198)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:372)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:391)
+- com.intuit.karate.junit5.FeatureNode.lambda$next$1(FeatureNode.java:71)
+- org.junit.jupiter.engine.descriptor.DynamicTestTestDescriptor.lambda$execute$0(DynamicTestTestDescriptor.java:53)
+
+classpath:frame/config.feature:4
+classpath:frame/config.feature:5
+classpath:frame/config.feature:6
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref failed">7</div>
+      
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>status 201</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.7">23:08:36.207 classpath:frame/config.feature:7
+Then status 201
+&gt;&gt; classpath:frame/config.feature:3
+&gt;&gt; karate-config.js failed
+&gt;&gt; js failed:
+&gt;&gt;&gt;&gt;
+01: (function id(){
+02: 
+03: var Config = {
+04: 
+05:  name:&#39;love&#39;
+06:  ish : &#39;https://reqres.in/api/users&#39;
+07: }
+08: var env=karate.env
+09: karate.log(&#39;The value is&#39;.env)
+10: if(env==qa) {
+11: Config ish :&#39;https://reqres.in/api/users&#39;
+12: }
+13: else(env==dev)
+14: {
+15: Config ish :&#39;https://reqres.in/api/users&#39;
+16: }
+17: 
+18: 
+19:  return config;
+20:  })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:6:1 Expected comma but found ident
+ ish : &#39;https://reqres.in/api/users&#39;
+ ^
+Unnamed:8:0 Expected ) but found var
+var env=karate.env
+^
+Unnamed:11:7 Expected ; but found ish
+Config ish :&#39;https://reqres.in/api/users&#39;
+       ^
+Unnamed:12:0 Expected eof but found }
+}
+^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:139)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:135)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1196)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:372)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:391)
+
+js failed:
+&gt;&gt;&gt;&gt;
+01: function id(){
+02: 
+03: var Config = {
+04: 
+05:  name:&#39;love&#39;
+06:  ish : &#39;https://reqres.in/api/users&#39;
+07: }
+08: var env=karate.env
+09: karate.log(&#39;The value is&#39;.env)
+10: if(env==qa) {
+11: Config ish :&#39;https://reqres.in/api/users&#39;
+12: }
+13: else(env==dev)
+14: {
+15: Config ish :&#39;https://reqres.in/api/users&#39;
+16: }
+17: 
+18: 
+19:  return config;
+20:  }
+&lt;&lt;&lt;&lt;
+com.intuit.karate.KarateException: js failed:
+&gt;&gt;&gt;&gt;
+01: (function id(){
+02: 
+03: var Config = {
+04: 
+05:  name:&#39;love&#39;
+06:  ish : &#39;https://reqres.in/api/users&#39;
+07: }
+08: var env=karate.env
+09: karate.log(&#39;The value is&#39;.env)
+10: if(env==qa) {
+11: Config ish :&#39;https://reqres.in/api/users&#39;
+12: }
+13: else(env==dev)
+14: {
+15: Config ish :&#39;https://reqres.in/api/users&#39;
+16: }
+17: 
+18: 
+19:  return config;
+20:  })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:6:1 Expected comma but found ident
+ ish : &#39;https://reqres.in/api/users&#39;
+ ^
+Unnamed:8:0 Expected ) but found var
+var env=karate.env
+^
+Unnamed:11:7 Expected ; but found ish
+Config ish :&#39;https://reqres.in/api/users&#39;
+       ^
+Unnamed:12:0 Expected eof but found }
+}
+^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:139)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:135)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1196)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:372)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:391)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:224)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1198)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:372)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:391)
+- com.intuit.karate.junit5.FeatureNode.lambda$next$1(FeatureNode.java:71)
+- org.junit.jupiter.engine.descriptor.DynamicTestTestDescriptor.lambda$execute$0(DynamicTestTestDescriptor.java:53)
+
+classpath:frame/config.feature:4
+classpath:frame/config.feature:5
+classpath:frame/config.feature:6
+classpath:frame/config.feature:7
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref failed">8</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>def result = call read(&#39;Post.feature@tag1&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.8">23:08:36.207 classpath:frame/config.feature:8
+* def result = call read(&#39;Post.feature@tag1&#39;)
+&gt;&gt; classpath:frame/config.feature:3
+&gt;&gt; karate-config.js failed
+&gt;&gt; js failed:
+&gt;&gt;&gt;&gt;
+01: (function id(){
+02: 
+03: var Config = {
+04: 
+05:  name:&#39;love&#39;
+06:  ish : &#39;https://reqres.in/api/users&#39;
+07: }
+08: var env=karate.env
+09: karate.log(&#39;The value is&#39;.env)
+10: if(env==qa) {
+11: Config ish :&#39;https://reqres.in/api/users&#39;
+12: }
+13: else(env==dev)
+14: {
+15: Config ish :&#39;https://reqres.in/api/users&#39;
+16: }
+17: 
+18: 
+19:  return config;
+20:  })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:6:1 Expected comma but found ident
+ ish : &#39;https://reqres.in/api/users&#39;
+ ^
+Unnamed:8:0 Expected ) but found var
+var env=karate.env
+^
+Unnamed:11:7 Expected ; but found ish
+Config ish :&#39;https://reqres.in/api/users&#39;
+       ^
+Unnamed:12:0 Expected eof but found }
+}
+^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:139)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:135)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1196)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:372)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:391)
+
+js failed:
+&gt;&gt;&gt;&gt;
+01: function id(){
+02: 
+03: var Config = {
+04: 
+05:  name:&#39;love&#39;
+06:  ish : &#39;https://reqres.in/api/users&#39;
+07: }
+08: var env=karate.env
+09: karate.log(&#39;The value is&#39;.env)
+10: if(env==qa) {
+11: Config ish :&#39;https://reqres.in/api/users&#39;
+12: }
+13: else(env==dev)
+14: {
+15: Config ish :&#39;https://reqres.in/api/users&#39;
+16: }
+17: 
+18: 
+19:  return config;
+20:  }
+&lt;&lt;&lt;&lt;
+com.intuit.karate.KarateException: js failed:
+&gt;&gt;&gt;&gt;
+01: (function id(){
+02: 
+03: var Config = {
+04: 
+05:  name:&#39;love&#39;
+06:  ish : &#39;https://reqres.in/api/users&#39;
+07: }
+08: var env=karate.env
+09: karate.log(&#39;The value is&#39;.env)
+10: if(env==qa) {
+11: Config ish :&#39;https://reqres.in/api/users&#39;
+12: }
+13: else(env==dev)
+14: {
+15: Config ish :&#39;https://reqres.in/api/users&#39;
+16: }
+17: 
+18: 
+19:  return config;
+20:  })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:6:1 Expected comma but found ident
+ ish : &#39;https://reqres.in/api/users&#39;
+ ^
+Unnamed:8:0 Expected ) but found var
+var env=karate.env
+^
+Unnamed:11:7 Expected ; but found ish
+Config ish :&#39;https://reqres.in/api/users&#39;
+       ^
+Unnamed:12:0 Expected eof but found }
+}
+^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:139)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:135)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1196)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:372)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:391)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:224)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1198)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:372)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:391)
+- com.intuit.karate.junit5.FeatureNode.lambda$next$1(FeatureNode.java:71)
+- org.junit.jupiter.engine.descriptor.DynamicTestTestDescriptor.lambda$execute$0(DynamicTestTestDescriptor.java:53)
+
+classpath:frame/config.feature:4
+classpath:frame/config.feature:5
+classpath:frame/config.feature:6
+classpath:frame/config.feature:7
+classpath:frame/config.feature:8
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref failed">9</div>
+      
+      <div class="step-cell failed">
+        <span>And</span>&nbsp;<span>print result</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.9">23:08:36.209 classpath:frame/config.feature:9
+And print result
+&gt;&gt; classpath:frame/config.feature:3
+&gt;&gt; karate-config.js failed
+&gt;&gt; js failed:
+&gt;&gt;&gt;&gt;
+01: (function id(){
+02: 
+03: var Config = {
+04: 
+05:  name:&#39;love&#39;
+06:  ish : &#39;https://reqres.in/api/users&#39;
+07: }
+08: var env=karate.env
+09: karate.log(&#39;The value is&#39;.env)
+10: if(env==qa) {
+11: Config ish :&#39;https://reqres.in/api/users&#39;
+12: }
+13: else(env==dev)
+14: {
+15: Config ish :&#39;https://reqres.in/api/users&#39;
+16: }
+17: 
+18: 
+19:  return config;
+20:  })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:6:1 Expected comma but found ident
+ ish : &#39;https://reqres.in/api/users&#39;
+ ^
+Unnamed:8:0 Expected ) but found var
+var env=karate.env
+^
+Unnamed:11:7 Expected ; but found ish
+Config ish :&#39;https://reqres.in/api/users&#39;
+       ^
+Unnamed:12:0 Expected eof but found }
+}
+^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:139)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:135)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1196)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:372)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:391)
+
+js failed:
+&gt;&gt;&gt;&gt;
+01: function id(){
+02: 
+03: var Config = {
+04: 
+05:  name:&#39;love&#39;
+06:  ish : &#39;https://reqres.in/api/users&#39;
+07: }
+08: var env=karate.env
+09: karate.log(&#39;The value is&#39;.env)
+10: if(env==qa) {
+11: Config ish :&#39;https://reqres.in/api/users&#39;
+12: }
+13: else(env==dev)
+14: {
+15: Config ish :&#39;https://reqres.in/api/users&#39;
+16: }
+17: 
+18: 
+19:  return config;
+20:  }
+&lt;&lt;&lt;&lt;
+com.intuit.karate.KarateException: js failed:
+&gt;&gt;&gt;&gt;
+01: (function id(){
+02: 
+03: var Config = {
+04: 
+05:  name:&#39;love&#39;
+06:  ish : &#39;https://reqres.in/api/users&#39;
+07: }
+08: var env=karate.env
+09: karate.log(&#39;The value is&#39;.env)
+10: if(env==qa) {
+11: Config ish :&#39;https://reqres.in/api/users&#39;
+12: }
+13: else(env==dev)
+14: {
+15: Config ish :&#39;https://reqres.in/api/users&#39;
+16: }
+17: 
+18: 
+19:  return config;
+20:  })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:6:1 Expected comma but found ident
+ ish : &#39;https://reqres.in/api/users&#39;
+ ^
+Unnamed:8:0 Expected ) but found var
+var env=karate.env
+^
+Unnamed:11:7 Expected ; but found ish
+Config ish :&#39;https://reqres.in/api/users&#39;
+       ^
+Unnamed:12:0 Expected eof but found }
+}
+^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:139)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:135)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1196)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:372)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:391)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:224)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1198)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:372)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:391)
+- com.intuit.karate.junit5.FeatureNode.lambda$next$1(FeatureNode.java:71)
+- org.junit.jupiter.engine.descriptor.DynamicTestTestDescriptor.lambda$execute$0(DynamicTestTestDescriptor.java:53)
+
+classpath:frame/config.feature:4
+classpath:frame/config.feature:5
+classpath:frame/config.feature:6
+classpath:frame/config.feature:7
+classpath:frame/config.feature:8
+classpath:frame/config.feature:9
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref failed">10</div>
+      
+      <div class="step-cell failed">
+        <span>And</span>&nbsp;<span>print name</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.10">23:08:36.209 classpath:frame/config.feature:10
+And print name
+&gt;&gt; classpath:frame/config.feature:3
+&gt;&gt; karate-config.js failed
+&gt;&gt; js failed:
+&gt;&gt;&gt;&gt;
+01: (function id(){
+02: 
+03: var Config = {
+04: 
+05:  name:&#39;love&#39;
+06:  ish : &#39;https://reqres.in/api/users&#39;
+07: }
+08: var env=karate.env
+09: karate.log(&#39;The value is&#39;.env)
+10: if(env==qa) {
+11: Config ish :&#39;https://reqres.in/api/users&#39;
+12: }
+13: else(env==dev)
+14: {
+15: Config ish :&#39;https://reqres.in/api/users&#39;
+16: }
+17: 
+18: 
+19:  return config;
+20:  })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:6:1 Expected comma but found ident
+ ish : &#39;https://reqres.in/api/users&#39;
+ ^
+Unnamed:8:0 Expected ) but found var
+var env=karate.env
+^
+Unnamed:11:7 Expected ; but found ish
+Config ish :&#39;https://reqres.in/api/users&#39;
+       ^
+Unnamed:12:0 Expected eof but found }
+}
+^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:139)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:135)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1196)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:372)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:391)
+
+js failed:
+&gt;&gt;&gt;&gt;
+01: function id(){
+02: 
+03: var Config = {
+04: 
+05:  name:&#39;love&#39;
+06:  ish : &#39;https://reqres.in/api/users&#39;
+07: }
+08: var env=karate.env
+09: karate.log(&#39;The value is&#39;.env)
+10: if(env==qa) {
+11: Config ish :&#39;https://reqres.in/api/users&#39;
+12: }
+13: else(env==dev)
+14: {
+15: Config ish :&#39;https://reqres.in/api/users&#39;
+16: }
+17: 
+18: 
+19:  return config;
+20:  }
+&lt;&lt;&lt;&lt;
+com.intuit.karate.KarateException: js failed:
+&gt;&gt;&gt;&gt;
+01: (function id(){
+02: 
+03: var Config = {
+04: 
+05:  name:&#39;love&#39;
+06:  ish : &#39;https://reqres.in/api/users&#39;
+07: }
+08: var env=karate.env
+09: karate.log(&#39;The value is&#39;.env)
+10: if(env==qa) {
+11: Config ish :&#39;https://reqres.in/api/users&#39;
+12: }
+13: else(env==dev)
+14: {
+15: Config ish :&#39;https://reqres.in/api/users&#39;
+16: }
+17: 
+18: 
+19:  return config;
+20:  })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:6:1 Expected comma but found ident
+ ish : &#39;https://reqres.in/api/users&#39;
+ ^
+Unnamed:8:0 Expected ) but found var
+var env=karate.env
+^
+Unnamed:11:7 Expected ; but found ish
+Config ish :&#39;https://reqres.in/api/users&#39;
+       ^
+Unnamed:12:0 Expected eof but found }
+}
+^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:139)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:135)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1196)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:372)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:391)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:224)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1198)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:372)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:391)
+- com.intuit.karate.junit5.FeatureNode.lambda$next$1(FeatureNode.java:71)
+- org.junit.jupiter.engine.descriptor.DynamicTestTestDescriptor.lambda$execute$0(DynamicTestTestDescriptor.java:53)
+
+classpath:frame/config.feature:4
+classpath:frame/config.feature:5
+classpath:frame/config.feature:6
+classpath:frame/config.feature:7
+classpath:frame/config.feature:8
+classpath:frame/config.feature:9
+classpath:frame/config.feature:10
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
